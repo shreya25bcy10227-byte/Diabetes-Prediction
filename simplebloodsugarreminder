@@ -1,0 +1,6 @@
+import time
+
+def reminder(times, interval):
+    for i in range(times):
+        time.sleep(interval)
+        print(f"Reminder {i+1}: Check your blood sugar now!")
