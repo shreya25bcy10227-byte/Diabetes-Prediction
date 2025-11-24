@@ -1,0 +1,9 @@
+glucose_readings = []
+
+def log_glucose(level):
+    glucose_readings.append(level)
+    print(f"Logged glucose level: {level} mg/dL")
+
+def show_glucose_log():
+    for i, reading in enumerate(glucose_readings, 1):
+        print(f"Reading {i}: {reading} mg/dL")
