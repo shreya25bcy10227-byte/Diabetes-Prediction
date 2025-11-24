@@ -1,0 +1,18 @@
+glucose_log = []
+
+def log_glucose(level):
+    glucose_log.append(level)
+    print(f"Logged glucose level: {level} mg/dL")
+
+def show_extremes():
+    if glucose_log:
+        print(f"Highest glucose recorded: {max(glucose_log)} mg/dL")
+        print(f"Lowest glucose recorded: {min(glucose_log)} mg/dL")
+    else:
+        print("No glucose readings logged yet.")
+
+# Example usage
+log_glucose(120)
+log_glucose(140)
+log_glucose(110)
+show_extremes()
